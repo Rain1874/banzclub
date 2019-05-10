@@ -1,0 +1,12 @@
+
+  #a {
+    height: 40px;
+    width: 40px;
+    background: linear-gradient(to top, black, white);
+    display: flex;
+    transition: transform 1s;
+  }
+
+  #a:hover {
+    background: red;
+  }

@@ -1,0 +1,23 @@
+@import './test.css';
+#index {
+  height:40px;
+  width:40px;
+  background: blue;
+  display: flex;
+  flex: 0 0 auto;
+  animation:twinkling1 1.2s linear 0s infinite;;
+}
+@keyframes twinkling1 {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.2);
+  }
+  50% {
+    opacity: 0.3;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(2);
+  }
+}
