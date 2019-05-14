@@ -1,11 +1,13 @@
-@import './test.css';
+@import 'test';
+@height:40px;
 #index {
-  height:40px;
+  height:@height;
   width:40px;
   background: blue;
   display: flex;
   flex: 0 0 auto;
-  animation:twinkling1 1.2s linear 0s infinite;;
+  //animation:twinkling1 1.2s linear 0s infinite;
+  background: url(./assets/bg.jpg);
 }
 @keyframes twinkling1 {
   0% {

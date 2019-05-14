@@ -1,0 +1,27 @@
+
+  #test {
+    height: 40px;
+    width: 40px;
+    background:url(./assets/bg.jpg);
+    display: flex;
+    transition: transform 1s;
+    //animation:twinkling2 1.2s linear 0s infinite;
+  }
+
+  #test:hover {
+    background: red;
+  }
+  @keyframes twinkling2 {
+    0% {
+      opacity: 0.5;
+      transform: scale(0.2);
+    }
+    50% {
+      opacity: 0.3;
+      transform: scale(1.2);
+    }
+    100% {
+      opacity: 0;
+      transform: scale(2);
+    }
+  }

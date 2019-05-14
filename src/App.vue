@@ -4,10 +4,11 @@
     <div>
       <el-button @click="startHacking">Start2</el-button>
     </div>
-    <div id="test">
+    <div id="app-test">
       <img src="./assets/background.jpg">
+      <img src="./assets/bg.jpg">
     </div>
-    <div id="a">
+    <div id="test">
       autoprefixer1
     </div>
     <div id="index">
@@ -20,7 +21,6 @@
 export default {
   methods: {
     startHacking () {
-    	console.log(p);
       this.$notify({
         title: 'It works!',
         type: 'success',
@@ -31,19 +31,14 @@ export default {
   }
 }
 </script>
-
-<style>
-  /*这里写会放在head标签里边，内部css*/
+<style lang="less">
 #app {
   font-family: Helvetica, sans-serif;
   text-align: center;
-  background: url("./assets/logo.png");
+  display: flex;
+  background: url("./assets/bg.jpg");
 }
-#test {
-  width: 18px;
-  height:18px;
-  border-radius:100%;
-  background:#d67c61;
+#app-test {
   /*animation:twinkling 1.2s linear 0s infinite;;*/
 }
 @keyframes twinkling {
@@ -60,15 +55,4 @@ export default {
     transform: scale(2);
   }
 }
-  #a {
-    height: 40px;
-    width: 40px;
-    background : linear-gradient(to top, black, white);
-    display : flex;
-    transition : transform 1s;
-  }
-  #a:hover {
-    background: red;
-  }
-
 </style>
